@@ -63,7 +63,7 @@ header {
     height: 50%;
 }
 
-#enable, #disable {
+#enable, #disable, #enable2 {
 
     position: absolute;
     left: 52%;
@@ -81,23 +81,31 @@ header {
 
 }
 
-#enable:hover, #disable:hover {
+#enable:hover, #disable:hover, #enable2:hover {
 
     color: #fff;
     background-color: #929292;
 
 }
 
+#enable2 {
+
+    top: 50px;
+    left: 20px;
+
+}
+
 #enable {
 
     top: 50px;
+    left: 150px;
 
 }
 
 #disable {
 
-    top: 100px;
-
+    top: 50px;
+    left: 280px;
 }
 
 a {
