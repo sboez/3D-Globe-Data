@@ -1,5 +1,4 @@
 html, body {
-
     height: 100%;
     width: 100%;
     margin: 0;
@@ -8,7 +7,6 @@ html, body {
 }
 
 header {
-
     position: absolute;
     width: 100%;
     height: 40px;
@@ -20,7 +18,6 @@ header {
 }
 
 #globalArea {
-  
     height: 100%;
     width: 100%;
     margin: 0;
@@ -28,7 +25,6 @@ header {
 }
 
 #changedArea {
-
     width: 50%;
     height: 100%;
     float: left;
@@ -36,7 +32,6 @@ header {
 }
 
 #infoBoard {
-
     position: absolute;
     left: 35%;
     top: 40%;
@@ -51,20 +46,17 @@ header {
 }
 
 #explanation {
-
     width: 100%;
     height: 50%;
     font-size: 16px;
 }
 
 #countryArea {
-
     width: 100%;
     height: 50%;
 }
 
 #enable, #disable, #enable2 {
-
     position: absolute;
     left: 52%;
     width: 100px;
@@ -82,33 +74,64 @@ header {
 }
 
 #enable:hover, #disable:hover, #enable2:hover {
-
     color: #fff;
     background-color: #929292;
 
 }
 
 #enable2 {
-
     top: 50px;
     left: 20px;
 
 }
 
 #enable {
-
     top: 50px;
     left: 150px;
 
 }
 
 #disable {
-
     top: 50px;
     left: 280px;
 }
 
 a {
-
   color: #ff0000;
+}
+
+#hudButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#hudButtons .testsBtn {
+    float: right;
+    height: 24px;
+    background: #333333;
+    padding: 3px 10px 2px;
+    color: white;
+    border: 0;
+    font-size: 18px;
+    font-family: 'RopaSans';
+    cursor: pointer;
+    margin: 0px 0px 4px 8px;
+    opacity: 0.9;
+    -webkit-appearance: none;
+}
+
+#hudButtons .testsBtn:hover {
+    opacity: 1;
+}
+
+#hudButtons .tiltBtn {
+    width: 30px;
+    float: none;
+}
+
+#hudButtons .topViewBtn {
+    background: #333333 url('images/topview.svg') 7px 4px no-repeat;
+}
+#hudButtons .sideViewBtn {
+    background: #333333 url('images/sideview.svg') 7px 4px no-repeat;
 }

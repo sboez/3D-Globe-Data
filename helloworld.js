@@ -39,7 +39,6 @@ axios.get('test_data.json')
     controller.init();
   });
 
-
 function showOut(show) {
   controller.showOutOnly(show);
 }
@@ -53,3 +52,32 @@ function showAll(show) {
   controller.showOutOnly(show);
 }
 
+var d3Graphs = {
+  tiltBtnInterval: -1
+}
+
+function showHud() {
+  $("#hudButtons").show();
+  $(".tiltBtn").on('mousedown touchstart', d3Graphs.tiltBtnClick);
+  $(".tiltBtn").on('mouseup touchend touchcancel', d3Graphs.tiltBtnMouseup);
+}
+
+function tiltBtnClick() {
+    var delta;
+    if($(this).hasClass('sideViewBtn')) {
+      delta = 10;
+    } else {
+      delta = -10;
+    }
+    d3Graphs.doTilt(delta);
+    d3Graphs.tiltBtnInterval = setInterval(d3Graphs.doTilt, 50, delta);
+}
+
+function doTilt(delta) {
+  tilt += delta * 0.01;
+  tilt = constrain(tilt, 0, Math.PI / 2);
+  camera.position.y = 300 * Math.sin(-tilt);
+  camera.position.z = 100 + 300 * Math.cos(-tilt);
+  camera.lookAt(new THREE.Vector3(0, 0, 300));
+  tiltTarget = undefined;
+}
