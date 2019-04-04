@@ -1,4 +1,4 @@
-#### 3D Globe data visualization with Three.js, Gio.js
+### 3D Globe data visualization with [Three.js](https://threejs.org), [Gio.js](https://giojs.org)
 
 ##### Use Firefox browser
 
