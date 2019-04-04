@@ -3,7 +3,6 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 header {
@@ -14,7 +13,6 @@ header {
     text-align: center;
     color: white;
     z-index: 1000;
-
 }
 
 #globalArea {
@@ -28,7 +26,6 @@ header {
     width: 50%;
     height: 100%;
     float: left;
-
 }
 
 #infoBoard {
@@ -70,25 +67,21 @@ header {
     transition: 1s;
     border-radius: 5px;
     background-color: rgba(110, 110, 110, 0.8);
-
 }
 
 #enable:hover, #disable:hover, #enable2:hover {
     color: #fff;
     background-color: #929292;
-
 }
 
 #enable2 {
     top: 50px;
     left: 20px;
-
 }
 
 #enable {
     top: 50px;
     left: 150px;
-
 }
 
 #disable {
@@ -105,6 +98,7 @@ a {
     top: 20px;
     right: 20px;
 }
+
 #hudButtons .testsBtn {
     float: right;
     height: 24px;
@@ -127,11 +121,4 @@ a {
 #hudButtons .tiltBtn {
     width: 30px;
     float: none;
-}
-
-#hudButtons .topViewBtn {
-    background: #333333 url('images/topview.svg') 7px 4px no-repeat;
-}
-#hudButtons .sideViewBtn {
-    background: #333333 url('images/sideview.svg') 7px 4px no-repeat;
 }
